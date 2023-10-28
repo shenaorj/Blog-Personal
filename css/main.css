@@ -1,4 +1,6 @@
+@import url(‘https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap’);
 body {
+    font-family: robo;
     margin: 0;
     padding: 0;
     position: fixed;
@@ -7,14 +9,11 @@ body {
     left: 0;
     right: 0;
 }
-
 a{
     text-decoration: none;
     display: inline;
     color: black;
-
 }
-
 header {
     width: 100%;
     height: 140px;
@@ -63,4 +62,42 @@ nav .profile-link a {
     color: black;
     border-bottom: 1px solid black;
 }
+ .home-main {
+   display: grid;
+   grid-template-columns: 1fr 4fr 1fr;
+   height: 100%;
+   background-image: url('../assets/img/Cover.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+.home-main section {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+
+}
+.home-main-text{
+    font-family: 'Roboto mono', monospace;
+    font-size: 30px;
+    font-weight: 700px;
+    letter-spacing: 10px;
+    color: white;
+    text-align: center;
+
+}
+.home-main-botton {
+    width: 110px;
+    height: 50px;
+    background: #47cfac;
+    display: grid;
+    align-items: center;
+}
+.home-main-botton a {
+    font-weight: 700;
+    font-size: 18px;
+}
+
 
